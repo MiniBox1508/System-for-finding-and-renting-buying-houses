@@ -1,0 +1,135 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram id="9f36ab2b" name="Container Diagram">
+    <mxGraphModel dx="1106" dy="1830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tU54_7yumnLDeOqGx2sT-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="110" y="225" width="510" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v1" value="Flutter App&lt;div&gt;(FlutterFlow UI)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="140" y="250" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2" value="Serverpod&lt;div&gt;API &amp;amp; WebSocket&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="440" y="620" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v3" value="DartFrog&lt;div&gt;Edge API&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="100" y="540" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v4" value="Python AI&lt;div&gt;Service&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="770" y="510" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v5" value="S3 / Supabase&lt;div&gt;Storage&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="190" y="940" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v6" value="PostgreSQL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="354" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v7" value="Firebase Cloud&lt;div&gt;Messaging&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="610" y="830" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e101" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Send user request&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;exitX=0.367;exitY=1.018;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="tU54_7yumnLDeOqGx2sT-3" target="v2" edge="1">
+          <mxGeometry x="-0.3313" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="337" />
+              <mxPoint x="300" y="390" />
+              <mxPoint x="570" y="390" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e102" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Upload image, video&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="v3" edge="1">
+          <mxGeometry x="0.1045" relative="1" as="geometry">
+            <mxPoint x="300" y="335" as="sourcePoint" />
+            <mxPoint x="140" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="390" />
+              <mxPoint x="170" y="390" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e103" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Callback upload successful&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;" parent="1" source="v3" target="v2" edge="1">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="570" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e104" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Data query&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;startArrow=block;" parent="1" source="v2" target="v6" edge="1">
+          <mxGeometry x="0.0038" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e105" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Save photo/video&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;(Presigned URL)&lt;/font&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;" parent="1" source="v2" target="v5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="650" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e106" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Callback upload successful&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;" parent="1" target="v3" edge="1">
+          <mxGeometry x="0.0789" relative="1" as="geometry">
+            <mxPoint x="270" y="880" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="270" y="775" />
+              <mxPoint x="160" y="775" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e107" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Push notification&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;" parent="1" source="v2" target="v7" edge="1">
+          <mxGeometry x="0.0038" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e108" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Verify media&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;startArrow=block;" parent="1" source="v2" target="v4" edge="1">
+          <mxGeometry x="-0.2258" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_ViMQsVYsCF8RsrZenl4-3" value="Web Flutter App&lt;br&gt;&lt;div&gt;(FlutterFlow UI)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="400" y="250" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NzPdIn7jeNFur-3X0LDI-2" value="User" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.user;" parent="1" vertex="1">
+          <mxGeometry x="294" y="-140" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NzPdIn7jeNFur-3X0LDI-3" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;View, post house information,&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;contact users to rent, buy houses&lt;/font&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;startArrow=block;entryX=0.196;entryY=0.045;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="NzPdIn7jeNFur-3X0LDI-2" target="tU54_7yumnLDeOqGx2sT-3" edge="1">
+          <mxGeometry x="0.0001" relative="1" as="geometry">
+            <mxPoint x="310" y="-10" as="sourcePoint" />
+            <mxPoint x="210.07999999999993" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="60" />
+              <mxPoint x="210" y="60" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tU54_7yumnLDeOqGx2sT-1" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;View, post house information,&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;contact users to rent, buy houses&lt;/font&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;startArrow=block;entryX=0.727;entryY=0.036;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NzPdIn7jeNFur-3X0LDI-2" target="tU54_7yumnLDeOqGx2sT-3">
+          <mxGeometry x="0.0643" y="14" relative="1" as="geometry">
+            <mxPoint x="380" y="30" as="sourcePoint" />
+            <mxPoint x="480" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="60" />
+              <mxPoint x="481" y="60" />
+            </Array>
+            <mxPoint x="-5" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tU54_7yumnLDeOqGx2sT-4" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Send notification&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;rounded=0;startArrow=block;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="v7" target="tU54_7yumnLDeOqGx2sT-3">
+          <mxGeometry x="0.203" y="1" relative="1" as="geometry">
+            <mxPoint x="740" y="860" as="sourcePoint" />
+            <mxPoint x="970" y="310" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1000" y="860" />
+              <mxPoint x="1000" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
